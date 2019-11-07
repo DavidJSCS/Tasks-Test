@@ -10,6 +10,16 @@ export class TskMenuComponent implements OnInit {
 
   constructor() { }
 
+  public count:number=0;
+
+  BClick() {
+    this.count++;   
+  }
+
+  BReset() {
+    this.count=0;   
+  }
+
   ngOnInit() {
   }
 

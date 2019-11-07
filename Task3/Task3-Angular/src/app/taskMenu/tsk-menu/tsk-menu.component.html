@@ -1,11 +1,23 @@
-<p>tsk-menu works!</p>
 <mat-tab-group>
-    <mat-tab label="One">
-      <h1>Some tab content</h1>
-      <p>...</p>
+    <mat-tab label="Directive">
+      <h1>Directive Example</h1>
+      <p>Here will be the directive example</p>
+      <p>If you push the button more than 10 times, reset button will dissable </p>
+      <button mat-button (click)="BClick()">Button Pushed {{count}} times</button>
+      <button mat-button *ngIf="count<10" (click)="BReset()">Reset</button>
+
+  
     </mat-tab>
-    <mat-tab label="Two">
-      <h1>Some more tab content</h1>
-      <p>...</p>
+    <mat-tab label="Service">
+      <h1>Service</h1>
+      <p>Here will be the directive example</p>
     </mat-tab>
+    <mat-tab label="API">
+        <h1>Call Api</h1>
+        <p>Here will be the Called API example</p>
+      </mat-tab>
+      <mat-tab label="Table">
+        <h1>Dinamic Table</h1>
+        <p>Here will be the Dinamic Table example</p>
+      </mat-tab>      
   </mat-tab-group>
