@@ -1,0 +1,9 @@
+Day 1
+
+Creating a new programing enviroment.
+For a easy and fast developing I will renew my enviroment and tools.
+Dowloading and istalling updated and modern software. 
+Cygwin64 for console operations
+Git for versioning including GitHub repository and GitKraken for manage both local and remote repository
+Visual Studio Code for coding.
+Nodejs angularcli and angular
