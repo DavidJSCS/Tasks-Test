@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MessageServiceService } from '../message-service.service';
+
+
 
 
 @Component({
@@ -8,17 +11,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TskMenuComponent implements OnInit {
 
-  constructor() { }
-
-  public count:number=0;
-
-  BClick() {
-    this.count++;   
-  }
-
-  BReset() {
-    this.count=0;   
-  }
+  constructor(private messager:MessageServiceService){}
 
   ngOnInit() {
   }

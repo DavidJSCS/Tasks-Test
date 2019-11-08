@@ -1,0 +1,4 @@
+<p>If you push the button more than 10 times, reset button will dissable </p>
+<button mat-raised-button color="primary" (click)="BClick()">Button Pushed {{count}} times</button>
+<button mat-raised-button color="primary" *ngIf="count<10" (click)="BReset()">Reset</button>
+

@@ -2,20 +2,35 @@
     <mat-tab label="Directive">
       <h1>Directive Example</h1>
       <p>Here will be the directive example</p>
-      <p>If you push the button more than 10 times, reset button will dissable </p>
-      <button mat-button (click)="BClick()">Button Pushed {{count}} times</button>
-      <button mat-button *ngIf="count<10" (click)="BReset()">Reset</button>
-
+      <app-tsk-conditional-button> </app-tsk-conditional-button>
   
     </mat-tab>
+
+
+
+
+
     <mat-tab label="Service">
       <h1>Service</h1>
-      <p>Here will be the directive example</p>
+      <p>A service is created to show messages, all the messages are controlled by the same service</p>
+
+      <button mat-stroked-button color="primary"  (click)="messager.showMessage('this is an alert',1)"   >Alert</button>
+      <button mat-stroked-button color="primary"  (click)="messager.showMessage('this is a snack bar',2)"   >Snackbar</button>
+      <button mat-stroked-button color="primary"  (click)="messager.showMessage('Console',3)"   >console</button>
+
     </mat-tab>
+
+
+
+
     <mat-tab label="API">
         <h1>Call Api</h1>
         <p>Here will be the Called API example</p>
       </mat-tab>
+
+
+
+
       <mat-tab label="Table">
         <h1>Dinamic Table</h1>
         <p>Here will be the Dinamic Table example</p>
