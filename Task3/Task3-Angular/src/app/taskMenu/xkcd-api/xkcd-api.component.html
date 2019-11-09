@@ -1,0 +1,11 @@
+<p>
+
+</p>
+<input type=”number” #ID (focusout) = 'getID(ID.value)'/>  <button (click)="getComic(id)">Load comic from XKCD </button>
+<div *ngIf='comic != null'>
+    comic numero {{comic.num}}
+    fecha {{comic.day}}:{{comic.month}}:{{comic.year}}
+    <img [src]='comic.img' [alt]='comic.alt'> 
+
+</div>
+

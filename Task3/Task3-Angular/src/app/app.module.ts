@@ -9,6 +9,10 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MessageServiceService } from './taskMenu/message-service.service';
+import { XkcdApiComponent } from './taskMenu/xkcd-api/xkcd-api.component';
+import { XkcdImporterService } from './taskMenu/xkcd-importer.service';
+import { HttpModule} from '@angular/http';
+import { JsonpModule} from  '@angular/http';
 
 
 
@@ -16,17 +20,20 @@ import { MessageServiceService } from './taskMenu/message-service.service';
   declarations: [
     AppComponent,
     TskMenuComponent,
-    TskConditionalButtonComponent
+    TskConditionalButtonComponent,
+    XkcdApiComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MatTabsModule,
     MatButtonModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    HttpModule,
+    JsonpModule
 
   ],
-  providers: [MessageServiceService],
+  providers: [MessageServiceService,XkcdImporterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
