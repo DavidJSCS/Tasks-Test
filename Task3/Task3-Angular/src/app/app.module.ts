@@ -13,6 +13,7 @@ import { XkcdApiComponent } from './taskMenu/xkcd-api/xkcd-api.component';
 import { XkcdImporterService } from './taskMenu/xkcd-importer.service';
 import { HttpModule} from '@angular/http';
 import { JsonpModule} from  '@angular/http';
+import { DinamicTableComponent } from './taskMenu/dinamic-table/dinamic-table.component';
 
 
 
@@ -21,7 +22,8 @@ import { JsonpModule} from  '@angular/http';
     AppComponent,
     TskMenuComponent,
     TskConditionalButtonComponent,
-    XkcdApiComponent
+    XkcdApiComponent,
+    DinamicTableComponent
   ],
   imports: [
     BrowserModule,
